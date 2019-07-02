@@ -42,7 +42,7 @@ class CityScreen extends ScreenView {
         //return;
         if(this.active) {
             ctx.strokeStyle = "#000000";
-            ctx.fillStyle = "#aaaaff";
+            ctx.fillStyle = "#aaffff";
             ctx.fillRect(this.x, this.y, this.w, this.h);
 
             ctx.fillStyle = '#000000';
