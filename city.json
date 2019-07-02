@@ -1,0 +1,31 @@
+[
+{
+    "citydata" : {
+        "id": 1,
+        "name": "City 1",
+        "world": 1,
+        "x": 25,
+        "y": 32,
+        "active": true
+    },
+    "resources": {
+        "food" : { "pph" : 545, "amount" : 500, "text": "Food" },
+        "wood" : { "pph" : 545, "amount" : 500, "text": "Wood" },
+        "stone" : { "pph" : 545, "amount" : 500, "text": "Stone" },
+        "iron" : { "pph" : 545, "amount" : 500, "text": "Iron" }
+    },
+    "buildings": [
+        {"id": 1, "type": 0, "level": 1, "name": "Town Hall", "gridPos": {"x":4, "y":4}},
+        {"id": 2, "type": 1, "level": 1, "name": "Walls", "gridPos": {"x":3, "y":2}}
+    ],
+    "troops": [
+        {"type": 0, "level": 1, "name": "Infantry", "quantity": 100},
+        {"type": 0, "level": 1, "name": "Archers", "quantity": 100},
+        {"type": 0, "level": 1, "name": "Cavalry", "quantity": 75},
+        {"type": 0, "level": 1, "name": "Siege", "quantity": 75},
+        {"type": 1, "level": 1, "name": "Boats", "quantity": 5}
+    ]
+}
+
+
+]
