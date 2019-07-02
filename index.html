@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empire Craft</title>
+
+    <script src="building.js"></script>
+    <script src="screenmanager.js"></script>
+    <script src="cityscreen.js"></script>
+    <script src="buildinghandler.js"></script>
+    <script src="game.js"></script>
+    <script src="loadjson.js"></script>
+    <script src="city.js"></script>
+    <script src="popupinfo.js"></script>
+    <script src="resources.js"></script>
+    <script src="player.js"></script>
+    <script src="utils.js"></script>
+    <script src="buildinginfoscreen.js"></script>
+    <script src="button.js"></script>
+    <script src="buildingdetailsscreen.js"></script>
+    <script src="buildingupgradescreen.js"></script>
+    
+    <script src="troops.js"></script>
+
+    <script>
+
+
+    function fetchCityData(data) {
+        cityData = data;
+        // buildingData[1].name = "academy";
+        // buildingData[1].startTime = "213215645643";
+        //console.log(cityData);
+        for(var x=0; x<cityData.length; x++) {
+            cities.push(new City(cityData[x]));
+        }
+        // console.log(buildingList[1]);
+    }
+
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <div id="buildingDiv" style="visibility: hidden; position:absolute; top:100px; left: 650px">
+        select building
+        <select onchange="buildingHandler.selectNewBuilding(this)" name="buildingSelect" id="buildingSelect">
+            <option value="">Select Building</option>
+            <option value="2">Farm</option>
+            <option value="3">Sawmill</option>
+            <option value="4">Quary</option>
+            <option value="5">Mine</option>
+        </select>
+    </div>
+</body>
+</html>
